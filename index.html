@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="manifest" href="/PWA_Pouch.io/manifest.json">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <title>PouchDB</title>
+</head>
+
+<body class="bg-light">
+
+  <div class="container py-5">
+    <h1 class="text-center mb-4 text-primary fw-bold">PouchDB Form</h1>
+
+    <div class="card shadow-sm p-4 mb-5">
+      <fieldset>
+        <legend class="fw-semibold mb-3">Registrar persona</legend>
+        <div class="mb-3">
+          <input id="name" type="text" class="form-control" placeholder="Nombre completo">
+        </div>
+        <div class="mb-3">
+          <input id="age" type="number" class="form-control" placeholder="Edad">
+        </div>
+        <div class="mb-3">
+          <input id="email" type="email" class="form-control" placeholder="Correo electrónico">
+        </div>
+        <div class="d-flex justify-content-between">
+          <button id="submit" type="button" class="btn btn-primary">Enviar</button>
+        </div>
+      </fieldset>
+    </div>
+
+    <div id="cards" class="d-flex flex-wrap gap-3 justify-content-center"></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/pouchdb@9.0.0/dist/pouchdb.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+  <script src="app.js"></script>
+  
+
+</body>
+
+</html>
